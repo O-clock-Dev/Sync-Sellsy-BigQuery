@@ -10,6 +10,6 @@ api_client = SellsyAPI(
 #for table in ['contacts', 'opportunities', 'companies', ]:
 
 
-companies = api_client.get('individuals', {})
-companies.dropna(axis=1, inplace=True, how = 'all')
-companies.to_csv('individuals-2.csv', index=False)
+data = api_client.get('individuals', {})
+data.dropna(axis=1, inplace=True, how = 'all')
+data.to_csv('individuals-2.csv', index=False)
