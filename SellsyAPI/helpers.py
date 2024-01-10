@@ -21,8 +21,6 @@ def flatten_dict(d, parent_key='', sep='_'):
             items.append((new_key, v))
     return dict(items)
 
-
-
 def find_label_by_id(data_dict, search_id):
     """
     Cherche et renvoie le label correspondant à un id donné dans un dictionnaire spécifique.
